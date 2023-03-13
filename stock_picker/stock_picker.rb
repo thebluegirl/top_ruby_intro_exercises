@@ -11,7 +11,6 @@ def stock_picker(stock_price_array)
     return buy_price_checker
   end
   buy_price =  get_buy_price(stock_price_array)
-  p buy_price
 
   def get_sell_price(array)
     def get_sell_price_array(array)
@@ -23,7 +22,11 @@ def stock_picker(stock_price_array)
     sell_price_array.max
   end
   sell_price = get_sell_price(stock_price_array)
-  p sell_price
+
+  days_array = Array.new
+  days_array << stock_price_array.index(buy_price)
+  days_array << stock_price_array.index(sell_price)
+  p days_array
 end
 
 stock_picker([17,3,6,9,15,8,6,1,10])
