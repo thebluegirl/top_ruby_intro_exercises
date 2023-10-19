@@ -1,4 +1,4 @@
-def caesar_cipher(string, shift_factor)
+def caesar_cipher(string, shift_factor=3)
   char_code_arr = string.bytes.map do |char_code|
     #To check the ascii value range and keep the shifting to only letters of the alphabet
     if (char_code >= 65 && char_code <= 90) || (char_code >= 97 &&char_code <= 122)

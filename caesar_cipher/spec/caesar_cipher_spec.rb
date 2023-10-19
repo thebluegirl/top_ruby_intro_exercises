@@ -27,7 +27,7 @@ describe ".caesar_cipher" do
 
   context "with spaces" do
     it "returns cipher with spaces unaltered" do
-      expect(caesar_cipher("string with spaces")).to eql "vwulqj zlwk vsdfv"
+      expect(caesar_cipher("string with spaces")).to eql "vwulqj zlwk vsdfhv"
     end
   end
 
