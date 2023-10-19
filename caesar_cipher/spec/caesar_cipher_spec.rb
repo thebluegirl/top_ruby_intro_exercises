@@ -7,7 +7,7 @@ describe ".caesar_cipher" do
     end
   end
 
-  context "without shift factor" do
+  context "without shift factor specified" do
     it "returns a cipher with a shift factor of three" do
       expect(caesar_cipher("string")).to eql "vwulqj"
     end
